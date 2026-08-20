@@ -1,0 +1,169 @@
+/* Reset and Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #1e1e2f, #4a235a);
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+.hero h1 {
+    margin-top: 1rem;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+/* Main Container */
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Cards */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    color: #4a235a;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+/* Fun Facts List */
+.facts-list {
+    list-style-type: none;
+}
+
+.facts-list li {
+    background: #fdfdfd;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    border-left: 4px solid #4a235a;
+    border-radius: 4px;
+}
+
+/* Quiz Section */
+.quiz-container {
+    text-align: center;
+}
+
+.lyric-text {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 1.5rem 0;
+    font-style: italic;
+    background: #f0f0f5;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+input[type="text"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    width: 60%;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #4a235a;
+}
+
+.btn {
+    background-color: #4a235a;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #31153d;
+}
+
+.btn-secondary {
+    background-color: #555;
+    margin-top: 1rem;
+}
+
+.btn-secondary:hover {
+    background-color: #333;
+}
+
+.feedback {
+    font-weight: bold;
+    margin-top: 1rem;
+    min-height: 24px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #1e1e2f;
+    color: #ccc;
+}

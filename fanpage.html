@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Bieber | Ultimate Fanpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for a modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Justin_Bieber_in_2015.jpg" alt="Justin Bieber" class="profile-pic">
+            <h1>Justin Bieber</h1>
+            <p>Global Pop Icon & Musician</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Bio Section -->
+        <section class="card fade-in">
+            <h2>About Justin</h2>
+            <p>Discovered on YouTube at the age of 13, Justin Bieber quickly rose to become one of the best-selling music artists of all time. With multi-platinum albums, numerous Grammy awards, and a dedicated fanbase known as "Beliebers," his evolution from a teen pop sensation to a versatile R&B and pop artist is truly iconic.</p>
+        </section>
+
+        <!-- Fun Facts Section -->
+        <section class="card fade-in">
+            <h2>Did You Know?</h2>
+            <ul class="facts-list">
+                <li>🎵 He can play the drums, guitar, piano, and trumpet.</li>
+                <li>🏆 He was the youngest solo male artist to top the Billboard 200 in 47 years.</li>
+                <li>🌍 His music video for "Baby" was one of the first videos to ever cross 1 billion views on YouTube.</li>
+                <li>🧩 He can solve a Rubik's Cube in under 2 minutes.</li>
+            </ul>
+        </section>
+
+        <!-- Interactive Quiz Section -->
+        <section class="card interactive-section fade-in">
+            <h2>Fill in the Blank: Song Quiz</h2>
+            <p>Test your Belieber knowledge! Fill in the missing lyrics below.</p>
+            
+            <div id="quiz-container" class="quiz-container">
+                <p id="lyric-snippet" class="lyric-text">"Loading..."</p>
+                <div class="input-group">
+                    <input type="text" id="answer-input" placeholder="Type the missing word(s)...">
+                    <button id="submit-btn" class="btn">Submit</button>
+                </div>
+                <p id="feedback-msg" class="feedback"></p>
+                <button id="next-btn" class="btn btn-secondary hidden">Next Song</button>
+            </div>
+            
+            <div id="score-container" class="hidden text-center">
+                <h3 id="final-score"></h3>
+                <button id="restart-btn" class="btn">Play Again</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made by Hong Yu :) - i am not a bieber fan sorry... i got 3/5 for the song quiz...</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
